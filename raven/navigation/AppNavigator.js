@@ -25,13 +25,11 @@ export default function AppNavigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        {isAuthenticated ? (
-          <Stack.Screen name="Main" component={Tabs} />
-        ) : (
-          <Stack.Screen name="Login" component={LoginScreen} />
-        )}
-        <Stack.Screen name="Signup" component={Signup} />
-      </Stack.Navigator>
+  <Stack.Screen name="Login" component={LoginScreen} />
+  <Stack.Screen name="Signup" component={Signup} />
+  {isAuthenticated && <Stack.Screen name="Main" component={Tabs} />}
+</Stack.Navigator>
+
     </NavigationContainer>
   );
 }

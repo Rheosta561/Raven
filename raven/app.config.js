@@ -35,7 +35,14 @@ export default () => ({
         backgroundColor: "#ffffff"
       },
       edgeToEdgeEnabled: true,
-      package: "com.techvolsung.Raven234"
+      package: "com.techvolsung.Raven234",
+      permissions: [
+    "ACCESS_FINE_LOCATION",
+    "ACCESS_COARSE_LOCATION",
+    "VIBRATE",
+    "INTERNET",
+    "ACCESS_NETWORK_STATE"
+  ]
     },
     web: {
       favicon: "./assets/icon2.png",
@@ -48,7 +55,7 @@ export default () => ({
       googleClientId: process.env.GOOGLE_CLIENT_ID,
       backendUrl: process.env.EXPO_PUBLIC_BACKEND_URL,
       iosClientId:process.env.IOS_CLIENT_ID,
-      backendUrl:'http://192.168.1.34:3000'
+      backendUrl:'https://raven-hf9i.onrender.com'
     },
     owner: "rheoanubhav",
     plugins: ["expo-web-browser"]
