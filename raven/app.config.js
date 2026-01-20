@@ -55,7 +55,7 @@ export default () => ({
       googleClientId: process.env.GOOGLE_CLIENT_ID,
       backendUrl: process.env.EXPO_PUBLIC_BACKEND_URL,
       iosClientId:process.env.IOS_CLIENT_ID,
-      backendUrl:'https://raven-hf9i.onrender.com'
+      backendUrl:'http://192.168.1.35:3000'
     },
     owner: "rheoanubhav",
     plugins: ["expo-web-browser"]
